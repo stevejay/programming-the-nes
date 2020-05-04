@@ -21,6 +21,3 @@ ca65 -o $build_dir_path/$src_file_basename.o $src_file_path
 
 # Invoke the linker.
 ld65 -C $config_file_path -o $program_file_path $build_dir_path/$src_file_basename.o
-
-# Optional step: open the build binary using the emulator.
-open -a OpenEmu $program_file_path
