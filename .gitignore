@@ -1,0 +1,5 @@
+# ignore build directories and build output files
+
+build/
+*.o
+*.nes
