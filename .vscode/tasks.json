@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "cc65: Compile and link current file",
+      "type": "shell",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "command": "${workspaceFolder}/scripts/build.sh",
+      "args": ["${file}"],
+      "problemMatcher": ["$ca65", "$ld65", "$ld65-config", "$ld65-unresolved"]
+    }
+  ]
+}
